@@ -22,7 +22,7 @@
 <!-- Intro  -->
 <h3 align="center">
         <samp>&gt; Hey There!, I am
-                <b><a target="_blank" href="">Naman</a></b>
+                <b><a target="_blank" href="https://nakhraswag.com">Naman</a></b>
         </samp>
 </h3>
 
@@ -37,7 +37,7 @@
 </p>
 
 <p align="center">
- <a href="https://justnaman.me" target="blank">
+ <a href="https://nakhraswag.me" target="blank">
   <img src="https://img.shields.io/badge/Website-DC143C?style=for-the-badge&logo=medium&logoColor=white" alt="naman" />
  </a>
  <a href="https://www.linkedin.com/in/namanmehrotra8/" target="_blank">

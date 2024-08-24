@@ -3,7 +3,7 @@
 
 
 ## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/namanxmehrotra) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/namanxmehrotra) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/namanxmehrotra) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@namanxmehrotra) [![Website] (https://img.shields.io/badge/just%20the%20message-606060)](https://namanxmehrotra.netlify.app) ![Static Badge](https://img.shields.io/badge/just%20the%20message-8A2BE2)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/namanxmehrotra) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/namanxmehrotra) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/namanxmehrotra) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@namanxmehrotra) ![Website](https://img.shields.io/badge/Website%20-5D5D5D)(https://namanxmehrotra.netlify.app)
 
 
 # 💻 Tech Stack:

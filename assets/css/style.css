@@ -1533,7 +1533,59 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
+.custom-button {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%; /* Ensure the anchor tag takes the full width */
+}
 
+.custom-btn {
+  position: relative;
+  width: 100%; /* Default to 100% for mobile */
+  max-width: 100%; /* Prevent it from exceeding 100% */
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+  cursor: pointer;
+  border: none;
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+.custom-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.custom-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+}
+
+.custom-btn:hover::before {
+  background: var(--bg-gradient-yellow-2);
+}
+
+/* Media query for desktop screens */
+@media (min-width: 768px) {
+  .custom-btn {
+    width: 30%;    /* Set to 40% width on desktop */
+    float: left; /* Aligns the button to the right */
+  }
+}
 
 
 /**
@@ -1633,6 +1685,44 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
+.custom-button {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.custom-btn {
+  background-color: #121212; /* Dark background similar to the image */
+  border: none;
+  color: #f1c40f; /* Gold color for text and icon */
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Subtle shadow for depth */
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-btn ion-icon {
+  margin-right: 8px; /* Space between the icon and text */
+  font-size: 20px;
+}
+
+.custom-btn:disabled {
+  cursor: not-allowed;
+}
+
+.custom-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.35);
+}
+
+.custom-btn:active {
+  transform: translateY(0px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
 
 
 

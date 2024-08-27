@@ -1,383 +1,1120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--========Meta Tags SEO======-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="I’m a Full-Stack Developer passionate about crafting user-friendly websites and apps. Constantly learning, innovating, and turning ideas into reality. 🚀">
-        <meta name="keywords" content="Portfolio, Web Developer, Python Developer, Software Engineer, Python Full Stack Developer">
-        
-        <!--=========Canonical Tag=======-->
-        <link rel="canonical" href="https://namanxmehrotra.netlify.app">
 
-        <!--========Social Media Tag=========-->
-        <meta property="og:title" content="Naman Mehrotra">
-        <meta property="og:description" content="I’m a Full-Stack Developer passionate about crafting user-friendly websites and apps. Constantly learning, innovating, and turning ideas into reality. 🚀">
-        <meta property="og:image" content="https://namanxmehrotra.netlify.app/img/Preview.png">
-        <meta property="og:url" content="https://namanxmehrotra.netlify.app">
-        <meta property="og:type" content="website">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naman Mehrotra || I’m a Full-Stack Developer passionate about crafting user-friendly websites and apps. Constantly learning, innovating, and turning ideas into reality. 🚀</title>
 
-        <!--========Title===== -->
-        <title>Naman Mehrotra || I’m a Full-Stack Developer passionate about crafting user-friendly websites and apps. Constantly learning, innovating, and turning ideas into reality. 🚀</title>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-        <!--========Site Icon===== -->
-        <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-        <!--========Stylesheet===== -->
-        <link rel="stylesheet" href='./files/style.css'>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&amp;display=swap">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
 
-        <!--========BoxIcons===== -->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<body>
 
-        <!--========TailwindCSS===== -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!--========TypedJS===== -->
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-        <!--========JSON Script======-->
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "Person",
-                "name": "Naman Mehrotra",
-                "url": "https://namanxmehrotra.netlify.app",
-                "image": "https://namanxmehrotra.netlify.app/img/about.png",
-                "sameAs": [
-                    "https://www.linkedin.com/in/namanxmehrotra",
-                    "https://instagram.com/namanxmehrotra"
-                ],
-                "jobTitle": "Web Developer",
-                "description": "Passionate web developer with experience in creating responsive and interactive websites.",
-                "undergraduate student Of": {
-                    "@type": "EducationalOrganization",
-                    "name": "The Bhawanipur Education Society College"
-                }
-            }
-            </script>
-    </head>
-    <body>
-        <!-- =========================================NavBar========================================= -->
-        <header class="header" id="header">
-            <a class="logo" href="https://namanxmehrotra.netlify.app">Naman Mehrotra</a>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-icon"><i class='bx bx-menu'></i></label>
-            <nav class="navbar" id="myLinks">
-                <a href="#Home" style="--i:1" class="active" >Home</a>
-                <a href="#About" style="--i:2">About</a>
-                <a href="#Skills" style="--i:3">Skills</a>
-                <a href="#Projects" style="--i:4">Projects</a>
-                <a href="#Contact" style="--i:5">Contact</a>
-            </nav>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Naman Mehrotra" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Naman Mehrotra">Naman Mehrotra</h1>
+
+          <p class="title">Full Stack Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:naman.m08@gmail.com" class="contact-link">naman.m08@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">August 08, 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>West Bengal, Kolkata, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/@namanxmehrotra" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/namanxmehrotra" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/namanxmehrotra" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/namanxmehrotra" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/namanxmehrotra/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Quotes</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
         </header>
 
-        <!-- =========================================Home========================================= -->
-        <section class="home" id="Home">
-            <div class="home-content">
-                
-                <h3>Hello, It's Me</h3>
-                <h1>Naman Mehrotra</h1>
-                <h4 style="--i:6">I'm a Commerce undergraduate who is<br>
-                    passionate in <span class="text"></span></h4>
-                
-                <div class="img">
-                    <img src="./img/Home.png" class="responsive" alt="Naman Mehrotra">
-                </div>
+        <section class="about-text">
+          <p>
+            Hey! I'm Naman Mehrotra, a Full-Stack Developer with a strong foundation in business and technology. 
+            Currently pursuing my Bachelor of Commerce (Honors) with a focus on IT, I integrate my academic knowledge with real-world projects to drive business growth and innovation. 
+            My experience spans various roles, including Web Developer and Co-Founder, where I've had the opportunity to work on projects that enhance customer engagement and streamline business operations. 
+            At Nakhra Swag, a casual-wear brand, I spearhead the development of e-commerce platforms that connect customers with products tailored to their needs. 
+            My work involves not just coding, but understanding market trends, customer preferences, and how technology can bridge the gap between a brand and its audience.
+          </p>
 
-                <div class="home-sci">
-                    <a href="https://www.linkedin.com/in/namanxmehrotra"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/namanxmehrotra"style="--i:8" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href="https://instagram.com/namanxmehrotra"style="--i:9" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://www.youtube.com/@namanxmehrotra"style="--i:10" target="_blank"><i class='bx bxl-youtube'></i></a>
-                </div>
-                <a href="https://drive.google.com/file/d/1LSlMh2WUftNBil7jT_P3JsnQBMY_aCle/view" style="--i:11" class="btn-box" target="_blank">Download Resume</a>
-            </div>
+          <p>
+            As a Web Developer at Ezee2Host, I collaborate with clients to create user-centric web solutions that help businesses achieve their goals. I pride myself on my ability to translate business requirements into functional, scalable, and efficient web applications. 
+            With over three years of experience, I've developed a keen eye for detail and a strong commitment to delivering high-quality work. I'm passionate about leveraging my skills in business strategy, data analysis, and technology to create solutions that drive success. 
+            My goal is to continuously learn and apply my knowledge to contribute meaningfully to the projects and teams I work with. 
+            Thank you for taking the time to learn about me. I look forward to connecting with you.
+          </p>
         </section>
 
-        <!-- =========================================About========================================= -->
-        <section id="About">
-            <div class="about reveal">
-                <div class="custom-shape-divider-top-1720508545">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
-                    </svg>
-                </div>
 
-                <div class="about-img">
-                    <img src="./img/about.png" class="abt-res" alt="Naman Mehrotra">
-                </div>
-                <div class="about-text reveal">
-                    <h2>About <span>Me</span></h2>
-                    <p>👋 Hey! I'm Naman Mehrotra, a Full-Stack Developer with a strong foundation in business and technology. Currently pursuing my Bachelor of Commerce (Honors) with a focus on IT, I integrate my academic knowledge with real-world projects to drive business growth and innovation.
-                        My experience spans various roles, including Web Developer and Co-Founder, where I've had the opportunity to work on projects that enhance customer engagement and streamline business operations. At Nakhra Swag, a casual-wear brand, I spearhead the development of e-commerce platforms that connect customers with products tailored to their needs. My work involves not just coding, but understanding market trends, customer preferences, and how technology can bridge the gap between a brand and its audience.
-                        As a Web Developer at Ezee2Host, I collaborate with clients to create user-centric web solutions that help businesses achieve their goals. I pride myself on my ability to translate business requirements into functional, scalable, and efficient web applications. With over three years of experience, I've developed a keen eye for detail and a strong commitment to delivering high-quality work. I'm passionate about leveraging my skills in business strategy, data analysis, and technology to create solutions that drive success. My goal is to continuously learn and apply my knowledge to contribute meaningfully to the projects and teams I work with.
-                        Thank you for taking the time to learn about me. I look forward to connecting with you.<br>
-                        <br>
-                        <a href="./files/timeline.html" style="--i:11" class="abtbtn-box">Accademics & Experience</a>
-                    </p>
-                </div>
+        <!--
+          - service
+        -->
 
-                <div class="custom-shape-divider-bottom-1720509106">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
-                    </svg>
-                </div>
-            </div>
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Business Strategy</h4>
+
+                <p class="service-item-text">
+                  I develop business idea of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
         </section>
 
-        <!-- =========================================Skills========================================= -->
-        <section id="Skills">
-            <h1 class="subtitle reveal">My <span>Skills</span></h1>
-            <div class="skills-container">
-                <!-- Skill 1 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/python.png" alt="Python">
-                    <p>Python</p>
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Anuj Mehrotra" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Anuj Mehrotra</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Naman was hired to create our website and app, and he did an amazing job. 
+                    His expertise and attention to detail truly stand out. He ensured that the final product met all our requirements and exceeded our expectations. 
+                    We are extremely satisfied with his work and highly recommend his services
+                  </p>
                 </div>
 
-                <!-- skill 3 -->
-                <div class="skill-box reveal">
-                    <img src="./img/logos/html-5.png" alt="HTML">
-                    <p>HTML</p>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Anuj Mehrotra" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Anuj Mehrotra</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Naman was hired to create our website and app, and he did an amazing job. 
+                    His expertise and attention to detail truly stand out. He ensured that the final product met all our requirements and exceeded our expectations. 
+                    We are extremely satisfied with his work and highly recommend his services
+                  </p>
                 </div>
 
-                <div class="skill-box reveal">
-                    <img src="./img/logos/css-3.png" alt="CSS">
-                    <p>CSS</p>
-                </div>
+              </div>
+            </li>
 
-                <div class="skill-box reveal">
-                    <img src="./img/logos/js.png" alt="JS">
-                    <p>JavaScript</p>
-                </div>
+          </ul>
 
-                <div class="skill-box reveal">
-                    <img src="./img/logos/react.png" alt="ReactJS">
-                    <p>ReactJS</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/nodejs.png" alt="NodeJS">
-                    <p>NodeJS</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/java.png" alt="Java">
-                    <p>Java</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/mysql.png" alt="MySQL">
-                    <p>MySQL</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/mongodb.png" alt="MongoDB">
-                    <p>MongoDB</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/linux.png" alt="Linux">
-                    <p>Linux</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/wordpress.png" alt="Wordpress">
-                    <p>Wordpress</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/figma.png" alt="Figma">
-                    <p>Figma</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/git.png" alt="Git">
-                    <p>Git</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/github.png" alt="GitHub">
-                    <p>GitHub</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/vscode.png" alt="VSCode">
-                    <p>VS Code</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/mspowerpoint.png" alt="Powerpoint">
-                    <p>Powerpoint</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/postman.png" alt="Postman">
-                    <p>Postman</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/Canva.png" alt="Canva">
-                    <p>Canva</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/DaVinciResolve.png" alt="DaVinci Resolve">
-                    <p>DaVinci Resolve</p>
-                </div>
-
-                <div class="skill-box reveal">
-                    <img src="./img/logos/audacity.png" alt="Audacity">
-                    <p>Audacity</p>
-                </div>
-
-            </div>
         </section>
 
-        <!--========================Projects============================-->
-        <section id="Projects" class="prj reveal">
-            <div class="featured-projects-box reveal">
-                <h2>My <span>Projects</span></h2>
-                <div class="separator">
-                </div>
 
-                <!--==================Project #1======================-->
-                <div class="project project1 reveal">
-                    <div class="project-details-box">
-                        <div class="project-main-info">
-                            <span>Project #1</span>
-                            <h3>Ezee2Host - IT Solution</h3>
-                            <p>
-                                Ezee2Host is a leading social media company and digital marketing agency in Kolkata, India. 
-                                We are an end-to-end IT Solution Partner with UI/UX Design, Creative Agency in India providing services to leading international and domestic brands. 
-                                At Ezee2Host, we are a digital marketing company that believes in breakthrough campaigns and full customer delight.
-                            </p>
-                            <div class="project-icons">
-                                <a href="https://ezee2host.com", target="_blank"><i class='bx bx-link-external'></i></a>
-                            </div>
-                        </div>
-                        <div class="project-tools">
-                            <p>Intern, Web Developer, 2021</p>
-                        </div>
-                    </div>
-                    <div class="project-image-box">
-                        <a href="https://ezee2host.com", target="_blank", class="project-img-link">
-                            <img src="./img/ezee2host.png" alt="Project Preview Image" />
-                        </a>
-                    </div>
-                </div>
+        <!--
+          - testimonials modal
+        -->
 
-                <!--===============Project #2=============-->
-                <div class="project project2 reveal">
-                    <div class="project-details-box">
-                        <div class="project-main-info">
-                            <span>Project #2</span>
-                            <h3>Nakhra Swag- Your Source for Urban and Streetwear fashion</h3>
-                            <p>
-                                Nakhra Swag is a casual-wear brand for Men and Women. Our customers and their satisfaction are our main focus and we believe in connecting with them to meet their requirements and what they want.
-                                We mirror the fashion sense of today’s youth and intend to sell a unique product line that conforms to the latest trend standards at unbeatable prices.
-                                Looking ahead, Nakhra Swag plans to expand by creating products in-house and selling them directly to our valued customers.
-                            </p>
-                            <div class="project-icons">
-                                <a href="https://nakhraswag.com", target="_blank"><i class='bx bx-link-external'></i></a>
-                            </div>
-                        </div>
-                        <div class="project-tools">
-                            <p>Co-Founder, Web & App Development, 2023</p>
-                        </div>
-                    </div>
-                    <div class="project-image-box">
-                        <a href="https://nakhraswag.com", target="_blank", class="project-img-link">
-                            <img src="./img/nakhraswag.jpg" alt="Project Preview Image" />
-                        </a>
-                    </div>
-                </div>
+        <div class="modal-container" data-modal-container>
 
-                <!--===========================Project #3==================-->
-                <div class="project project1 reveal">
-                    <div class="project-details-box">
-                        <div class="project-main-info">
-                            <span>Project #3</span>
-                            <h3>Nakhra Swag- Your Source for Urban and Streetwear fashion (Android App)</h3>
-                            <p>
-                                Nakhra Swag is a casual-wear brand for Men and Women. Our customers and their satisfaction are our main focus and we believe in connecting with them to meet their requirements and what they want.
-                                We mirror the fashion sense of today’s youth and intend to sell a unique product line that conforms to the latest trend standards at unbeatable prices.
-                                Looking ahead, Nakhra Swag plans to expand by creating products in-house and selling them directly to our valued customers.
-                            </p>
-                            </p>
-                            <div class="project-icons">
-                                <a href="https://github.com/vsmidhun21/Leaf-Disease-Detection", target="_blank"><i class='bx bxl-github'></i></a>
-                                <a href="https://youtu.be/_VlrYOOJYhQ", target="_blank"><i class='bx bx-link-external'></i></a>
-                            </div>
-                        </div>
-                        <div class="project-tools">
-                            <p>Co-Founder, Android App Development, 2023</p>
-                        </div>
-                    </div>
-                    <div class="project-image-box">
-                        <a href="https://youtu.be/_VlrYOOJYhQ", target="_blank", class="project-img-link">
-                            <img src="./img/app.jpg" alt="Project Preview Image" />
-                        </a>
-                    </div>
-                </div>
+          <div class="overlay" data-overlay></div>
 
-                <!--===============Project #4=============-->
-                <div class="project project2 reveal">
-                    <div class="project-details-box">
-                        <div class="project-main-info">
-                            <span>Project #4</span>
-                            <h3>Portfolio Website</h3>
-                            <p>
-                                This is a portfolio website showcasing my work in full-stack development and creative projects.
-                                Where creativity meets code. Explore my journey through the world of full-stack development
-                            </p>
-                            <div class="project-icons">
-                                <a href="https://github.com/namanxmehrotra/namanxmehrotra", target="_blank"><i class='bx bxl-github'></i></a>
-                                <a href="https://namanxmehrotra.netlify.app", target="_blank"><i class='bx bx-link-external'></i></a>
-                            </div>
-                        </div>
-                        <div class="project-tools">
-                            <p>Web Development, 2024</p>
-                        </div>
-                    </div>
-                    <div class="project-image-box">
-                        <a href="https://namanxmehrotra.netlify.app", target="_blank", class="project-img-link">
-                            <img src="./img/Preview.png" alt="Project Preview Image" />
-                        </a>
-                    </div>
-                </div>
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Anuj Mehrotra" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Anuj Mehrotra</h4>
+
+              <time datetime="2021-06-14">2 Febuary, 2024</time>
+
+              <div data-modal-text>
+                <p>
+                  Naman was hired to create our website and app, and he did an amazing job. 
+                  His expertise and attention to detail truly stand out. He ensured that the final product met all our requirements and exceeded our expectations. 
+                  We are extremely satisfied with his work and highly recommend his services
+                </p>
+              </div>
 
             </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://ezee2host.com">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://nakhraswag.com">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://deepjyotigroup.com/">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
         </section>
 
-        <!--====================== Contact =============================== -->
-        <section class="contacts" id="Contact">
-            <div class="contact-text reveal">
-                <h2>Contact <span>Me</span></h2>
-                <center><h4>Get in Touch</h4>
-                <div class="contact-list">
-                    <li><i class='bx bxl-gmail'></i>naman.m08@gmail.com</li>
-                    <li><i class='bx bxs-location-plus' ></i>West Bengal, Kolkata, India</li>
-                    
-                </div>
-                <div class="contact-icons">
-                    <a href="https://www.linkedin.com/in/namanxmehrotra" target="_blank"><i class="bx bxl-linkedin"></i></a>
-                    <a href="https://github.com/namanxmehrotra" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.youtube.com/@namanxmehrotra"><i class='bx bxl-youtube'></i></a>
-                    <a href="https://instagram.com/namanxmehrotra" target="_blank"><i class="bx bxl-instagram"></i></a>
-                </div>
-                </center>
-                <div class="last-text">
-                    <p>Developed & Crafted with 💛 Naman Mehrotra <i class='bx bx-copyright' style="color: white;"></i>2024</p>
-                </div>
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Vidyanjali International School (VIS)</h4>
+
+              <span>2018 — 2024</span>
+
+              <p class="timeline-text">
+                I completed my High School in the Commerce field at Vidyanjali International School, 
+                in the Cambridge Assesment International Education.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">The Bhawanipur Education Society College (Besc)</h4>
+
+              <span>2024 Present</span>
+
+              <p class="timeline-text">
+                I am currently and undergraduate of B.Com (Honours) at The Bhawanipur Education Society College, under the University of Calcutta.
+              </p>
+
+            </li>
+
+          </ol>
+
         </section>
 
-        <!--====================== Go Top Icon =============================== -->
-        <a href="#Home" class="top"><i class='bx bx-up-arrow-alt' ></i> </a>
+        <section class="timeline">
 
-        <!--========Scripts===== -->
-        <script src="./files/script.js"></script>
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
 
-    </body>  
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Nakhra Swag (Co-Founder & Web Developer)</h4>
+
+              <span>January 2023 — Present</span>
+
+              <p class="timeline-text">
+                Nakhra Swag is a casual-wear brand for Men and Women. Our customers and their satisfaction are our main focus and we believe in connecting with them to meet their requirements and what they want. 
+                We mirror the fashion sense of today’s youth and intend to sell a unique product line that conforms to the latest trend standards at unbeatable prices. 
+                Looking ahead, Nakhra Swag plans to expand by creating products in-house and selling them directly to our valued customers.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ezee2Host (Internship & Full Stack Web Developer)</h4>
+
+              <span>January 2021 — Present</span>
+
+              <p class="timeline-text">
+                Ezee2Host is a leading social media company and digital marketing agency in Kolkata, India. 
+                We are an end-to-end IT Solution Partner with UI/UX Design, Creative Agency in India providing services to leading international and domestic brands. 
+                At Ezee2Host, we are a digital marketing company that believes in breakthrough campaigns and full customer delight.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">ReactJS</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="55">55%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 55%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">MySQL</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+            <div class="title-wrapper">
+              <h5 class="h5">MongoDB</h5>
+              <data value="70">70%</data>
+            </div>
+
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 70%;"></div>
+            </div>
+
+          </li>
+
+            
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">NodeJS</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">VS Code</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Figma</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">GitHub</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+            
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Powerpoint</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+            
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Canva</h5>
+                <data value="80">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Audacity</h5>
+                <data value="85">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Portfolio</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Portfolio</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://ezee2host.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="ezee2host" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ezee2Host - IT Solution</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://nakhraswag.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.jpg" alt="nakhra swag" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Nakhra Swag - Ecommerce Website</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://deepjyotigroup.com/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="deep jyoti group" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Deep Jyoti Group</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://play.google.com/store/apps/details?id=com.anujenterprise.nakhraswag">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.jpg" alt="nakhra swag app" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Nakhra Swag (Android App)</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://play.google.com/store/apps/details?id=com.ezee2host.technologies">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="ezee2host app" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ezee2Host (Android App)</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="portfolio">
+              <a href="https://namanxmehrotra.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="portfolio" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Personal Portfolio</h3>
+
+                <p class="project-category">Portfolio</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #Quotes
+      -->
+
+      <article class="quotes" data-page="quotes">
+
+        <header>
+          <h2 class="h2 article-title">Quotes</h2>
+        </header>
+
+        <section class="quotes-posts">
+
+          <ul class="quotes-posts-list">
+
+            <li class="quotes-post-item">
+              <a href="./assets/images/quote1.png">
+
+                <figure class="quotes-banner-box">
+                  <img src="./assets/images/quote1.png" alt="Quote 1" loading="lazy">
+                </figure>
+
+                <div class="quotes-content">
+
+                  <div class="quotes-meta">
+                    <p class="quotes-category">Life</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">August 08, 2024</time>
+                  </div>
+
+                  <h3 class="h3 quotes-item-title">Quote 1</h3>
+
+                  <p class="quotes-text">
+                    Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="quotes-post-item">
+              <a href="./assets/images/quote2.png">
+
+                <figure class="quotes-banner-box">
+                  <img src="./assets/images/quote2.png" alt="Quote 2" loading="lazy">
+                </figure>
+
+                <div class="quotes-content">
+
+                  <div class="quotes-meta">
+                    <p class="quotes-category">Education</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">August 10, 2024</time>
+                  </div>
+
+                  <h3 class="h3 quotes-item-title">Quote 2</h3>
+
+                  <p class="quotes-text">
+                    Education is the most powerful weapon which you can use to change the world.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="quotes-post-item">
+              <a href="./assets/images/quote3.png">
+
+                <figure class="quotes-banner-box">
+                  <img src="./assets/images/quote3.png" alt="Quote 3" loading="lazy">
+                </figure>
+
+                <div class="quotes-content">
+
+                  <div class="quotes-meta">
+                    <p class="quotes-category">Inspirational</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">August 15, 2024</time>
+                  </div>
+
+                  <h3 class="h3 quotes-item-title">Quote 3</h3>
+
+                  <p class="quotes-text">
+                    If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="quotes-post-item">
+              <a href="./assets/images/quote4.png">
+
+                <figure class="quotes-banner-box">
+                  <img src="./assets/images/quote4.png" alt="Quote 4" loading="lazy">
+                </figure>
+
+                <div class="quotes-content">
+
+                  <div class="quotes-meta">
+                    <p class="quotes-category">Friendship</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">August 22, 2024</time>
+                  </div>
+
+                  <h3 class="h3 quotes-item-title">Quote 4</h3>
+
+                  <p class="quotes-text">
+                    Lots of people want to ride with you in the limo, but what you want is someone who will take the bus with you when the limo breaks down
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.21689694983!2d88.26495057337593!3d22.535564936984567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1724681482090!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>

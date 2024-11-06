@@ -123,11 +123,16 @@
             </a>
           </li>
 
-          <li class="social-item">
-            <a href="https://x.com/namanxmehrotra" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
+          <ul>
+            <li class="social-item" style="padding-top: 8px;">
+              <a href="https://x.com/namanxmehrotra" class="social-link" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M4.2 3h4.6l3.7 5.9L16.2 3H21l-6.1 9.1L21 21h-4.6l-3.5-5.7L9.5 21H5l6.1-9.1L4.2 3z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+                 
 
           <li class="social-item">
             <a href="https://www.instagram.com/namanxmehrotra" class="social-link">
@@ -423,7 +428,7 @@
 
             <li class="clients-item">
               <a href="https://nakhraswag.com">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
+                <img src="./assets/images/logo-2-color.png" alt="client logo" style="width: 200px; margin-top: 35px;">
               </a>
             </li>
 
@@ -524,7 +529,7 @@
 
               <h4 class="h4 timeline-item-title">Ezee2Host (Internship & Full Stack Web Developer)</h4>
 
-              <span>January 2021 — Present</span>
+              <span>January 2021 — September 2024</span>
 
               <p class="timeline-text">
                 Ezee2Host is a leading social media company and digital marketing agency in Kolkata, India. 
@@ -1072,11 +1077,10 @@
       -->
 
       <article class="contact" data-page="contact">
-
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
-
+      
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
@@ -1084,32 +1088,46 @@
               width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
-
+      
         <section class="contact-form">
-
           <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
+      
+          <form id="contact-form" class="form" data-form>
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button id="submit-button" class="form-btn" type="submit">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
-
         </section>
-
       </article>
-
+      
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script>
+        (function(){
+          emailjs.init("gXY9h-aQwn54hZbX1"); // Replace with your EmailJS public key
+        })();
+      
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+          event.preventDefault();
+          document.getElementById("submit-button").disabled = true;
+      
+          emailjs.sendForm("service_bcx0bwb", "template_md2mqeq", this)
+            .then(function() {
+              alert("Message sent successfully!");
+              document.getElementById("contact-form").reset();
+              document.getElementById("submit-button").disabled = false;
+            }, function(error) {
+              alert("Failed to send message. Please try again.");
+              document.getElementById("submit-button").disabled = false;
+            });
+        });
+      </script>
+      
     </div>
 
   </main>

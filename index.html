@@ -1,1149 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naman Mehrotra || I’m a Web Developer & Entrepreneur who is passionate about crafting user-friendly websites and apps. Constantly learning, innovating, and turning ideas into reality. 🚀</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- EmailJS script -->
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naman Mehrotra - Portfolio (Windows XP Edition)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tahoma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
 </head>
-
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Naman Mehrotra" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Naman Mehrotra">Naman Mehrotra</h1>
-
-          <p class="title">Web Developer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:naman.m08@gmail.com" class="contact-link">naman.m08@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">August 08, 2005</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>West Bengal, Kolkata, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.youtube.com/@namanxmehrotra" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-          <ul>
-            <li class="social-item" style="padding-top: 8px;">
-              <a href="https://x.com/namanxmehrotra" class="social-link" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M4.2 3h4.6l3.7 5.9L16.2 3H21l-6.1 9.1L21 21h-4.6l-3.5-5.7L9.5 21H5l6.1-9.1L4.2 3z"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-                 
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/namanxmehrotra" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/namanxmehrotra" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/namanxmehrotra/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Quotes</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Hey! I'm Naman Mehrotra, a Full-Stack Developer with a strong foundation in business and technology. 
-            Currently pursuing my Bachelor of Commerce (Honors) with a focus on IT, I integrate my academic knowledge with real-world projects to drive business growth and innovation. 
-            My experience spans various roles, including Web Developer and Co-Founder, where I've had the opportunity to work on projects that enhance customer engagement and streamline business operations. 
-            At Nakhra Swag, a casual-wear brand, I spearhead the development of e-commerce platforms that connect customers with products tailored to their needs. 
-            My work involves not just coding, but understanding market trends, customer preferences, and how technology can bridge the gap between a brand and its audience.
-          </p>
-
-          <p>
-            As a Web Developer at Ezee2Host, I collaborate with clients to create user-centric web solutions that help businesses achieve their goals. I pride myself on my ability to translate business requirements into functional, scalable, and efficient web applications. 
-            With over three years of experience, I've developed a keen eye for detail and a strong commitment to delivering high-quality work. I'm passionate about leveraging my skills in business strategy, data analysis, and technology to create solutions that drive success. 
-            My goal is to continuously learn and apply my knowledge to contribute meaningfully to the projects and teams I work with. 
-            Thank you for taking the time to learn about me. I look forward to connecting with you.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Business Strategy</h4>
-
-                <p class="service-item-text">
-                  I develop business idea of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Anuj Mehrotra" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Anuj Mehrotra</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Naman was hired to create our website and app, and he did an amazing job. 
-                    His expertise and attention to detail truly stand out. He ensured that the final product met all our requirements and exceeded our expectations. 
-                    We are extremely satisfied with his work and highly recommend his services
-                  </p>
+    <div id="desktop">
+        <div class="desktop-icon-container">
+            <div class="desktop-icon" data-window-id="about-window">
+                <div class="icon-image-wrapper">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 10C7 8.89543 7.89543 8 9 8H39C40.1046 8 41 8.89543 41 10V30H7V10Z" fill="#B0B0B0" stroke="#000000" stroke-width="2"/><path d="M7 30V34C7 35.1046 7.89543 36 9 36H39C40.1046 36 41 35.1046 41 34V30" stroke="#000000" stroke-width="2"/><rect x="12" y="12" width="24" height="14" fill="#0058CC"/><path d="M19 40H29" stroke="#000000" stroke-width="2" stroke-linecap="round"/></svg>
                 </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Anuj Mehrotra" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Anuj Mehrotra</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Naman was hired to create our website and app, and he did an amazing job. 
-                    His expertise and attention to detail truly stand out. He ensured that the final product met all our requirements and exceeded our expectations. 
-                    We are extremely satisfied with his work and highly recommend his services
-                  </p>
+                <span>About Me</span>
+            </div>
+            <div class="desktop-icon" data-window-id="skills-window">
+                 <div class="icon-image-wrapper">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9C6 7.89543 6.89543 7 8 7H18L22 11H40C41.1046 11 42 11.8954 42 13V37C42 38.1046 41.1046 39 40 39H8C6.89543 39 6 38.1046 6 37V9Z" fill="#FFDA78" stroke="#EAA220" stroke-width="2"/></svg>
                 </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Anuj Mehrotra" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                <span>Skills</span>
             </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Anuj Mehrotra</h4>
-
-              <time datetime="2021-06-14">2 Febuary, 2024</time>
-
-              <div data-modal-text>
-                <p>
-                  Naman was hired to create our website and app, and he did an amazing job. 
-                  His expertise and attention to detail truly stand out. He ensured that the final product met all our requirements and exceeded our expectations. 
-                  We are extremely satisfied with his work and highly recommend his services
-                </p>
-              </div>
-
+            <div class="desktop-icon" data-window-id="projects-window">
+                 <div class="icon-image-wrapper">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="18" stroke="#0078D7" stroke-width="3"/><path d="M24 6C26.3261 11.0914 27.5 17.2174 27.5 24C27.5 30.7826 26.3261 36.9086 24 42M24 6C21.6739 11.0914 20.5 17.2174 20.5 24C20.5 30.7826 21.6739 36.9086 24 42M6 24H42M11 12C14.8333 15.8333 17.4 20.4 18.7 24M37 12C33.1667 15.8333 30.6 20.4 29.3 24M11 36C14.8333 32.1667 17.4 27.6 18.7 24M37 36C33.1667 32.1667 30.6 27.6 29.3 24" stroke="#0078D7" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <span>Projects</span>
             </div>
-
-          </section>
+            <div class="desktop-icon" data-window-id="contact-window">
+                 <div class="icon-image-wrapper">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="12" width="36" height="24" rx="3" fill="#D4E6FC" stroke="#0058CC" stroke-width="2"/><path d="M7 13L24 25L41 13" stroke="#0058CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <span>Contact</span>
+            </div>
+            <div class="desktop-icon" data-window-id="control-panel-window">
+                 <div class="icon-image-wrapper">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="8" width="32" height="32" rx="3" fill="#C0C0C0" stroke="#505050" stroke-width="2"/><path d="M16 18H32" stroke="#505050" stroke-width="2" stroke-linecap="round"/><path d="M16 24H32" stroke="#505050" stroke-width="2" stroke-linecap="round"/><path d="M16 30H32" stroke="#505050" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="18" r="1.5" fill="#0078D7"/><circle cx="24" cy="24" r="1.5" fill="#0078D7"/><circle cx="20" cy="30" r="1.5" fill="#0078D7"/></svg>
+                </div>
+                <span>Control Panel</span>
+            </div>
+            <div class="desktop-icon" data-link="http://namanxmehrotra.netlify.app">
+                <div class="icon-image-wrapper">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4Z" fill="#FFA500" stroke="#E69500" stroke-width="2"/><path d="M24 12L28 18L24 24L20 18L24 12Z" fill="white"/><path d="M18 24H30" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M20 30L24 36L28 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <span>My Portfolio</span>
+            </div>
+            <div class="desktop-icon" data-link="http://linkedin.com/in/namanxmehrotra">
+                <div class="icon-image-wrapper">
+                     <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="36" height="36" rx="3" fill="#0077B5"/><path d="M17 20V31M17 17C17 17.8284 16.3284 18.5 15.5 18.5C14.6716 18.5 14 17.8284 14 17C14 16.1716 14.6716 15.5 15.5 15.5C16.3284 15.5 17 16.1716 17 17ZM24 31V24.75C24 23.0772 24 20.75 26.75 20.75C29.5 20.75 29.5 22.75 29.5 24.75V31M32 20H29.5V20" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+                </div>
+                <span>LinkedIn</span>
+            </div>
 
         </div>
 
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="https://ezee2host.com">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://nakhraswag.com">
-                <img src="./assets/images/logo-2-color.png" alt="client logo" style="width: 200px; margin-top: 35px;">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://deepjyotigroup.com/">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+        <div class="desktop-widget" id="date-time-widget">
+            <div class="time">12:00 AM</div>
+            <div class="date">Friday, May 23, 2025</div>
+        </div>
+        <div class="desktop-widget" id="weather-widget">
+            <div class="location">Kolkata, India</div>
+            <div class="details">
+                <span class="temperature">--°C</span> - <span class="description">Loading...</span>
             </div>
+            <div class="loading" style="display: none;">Fetching weather...</div>
+            <div class="error" style="display: none;">Could not fetch weather.</div>
+        </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Vidyanjali International School (VIS)</h4>
-
-              <span>2018 — 2024</span>
-
-              <p class="timeline-text">
-                I completed my High School in the Commerce field at Vidyanjali International School, 
-                in the Cambridge Assesment International Education.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">The Bhawanipur Education Society College (Besc)</h4>
-
-              <span>2024 Present</span>
-
-              <p class="timeline-text">
-                I am currently and undergraduate of B.Com (Honours) at The Bhawanipur Education Society College, under the University of Calcutta.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+        <div class="window" id="about-window" data-title="About Me" data-icon-svg='<svg class="window-icon" viewBox="0 0 16 16"><path d="M2 3C2 2.44772 2.44772 2 3 2H13C13.5523 2 14 2.44772 14 3V10H2V3Z" fill="#B0B0B0"/><path d="M2 10V11C2 11.5523 2.44772 12 3 12H13C13.5523 12 14 11.5523 14 11V10" stroke="currentColor" stroke-width="1"/><rect x="4" y="4" width="8" height="5" fill="#0058CC"/><path d="M6 13.5H10" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>'>
+            <div class="window-header">
+                <span class="window-title">About Me</span>
+                <div class="window-buttons">
+                    <button class="minimize" title="Minimize"><svg viewBox="0 0 10 10"><path d="M0 4H10V6H0V4Z"/></svg></button>
+                    <button class="maximize" title="Maximize"><svg viewBox="0 0 10 10"><rect x="0" y="0" width="10" height="10" stroke-width="2" fill="none"/></svg></button>
+                    <button class="close" title="Close"><svg viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke-width="2.5" stroke-linecap="round"/></svg></button>
+                </div>
             </div>
+            <div class="window-content">
+                <h3>Naman Mehrotra</h3>
+                <p> <a href="tel:9875479088">9875479088</a> | <a href="mailto:naman.m08@gmail.com">naman.m08@gmail.com</a> | India, Kolkata | <a href="http://namanxmehrotra.netlify.app" target="_blank">namanxmehrotra.netlify.app</a> | <a href="http://linkedin.com/in/namanxmehrotra" target="_blank">linkedin.com/in/namanxmehrotra</a></p>
+                <h4>Summary</h4> <p>Experienced full-stack developer with a solid foundation in business and technology, currently pursuing a Bachelor of Commerce (Honors) with a focus on IT. Integrating academic knowledge with real-world projects to drive business growth and innovation across various roles, including web developer and co-founder. Skilled in creating user-centric web solutions that enhance customer engagement and streamline business operations. Committed to translating business requirements into functional, scalable, and efficient web applications, leveraging expertise in business strategy and technology to drive project success. Passionate about continuous learning and contributing meaningfully to projects and teams.</p>
+                <h4>Experience Highlight</h4> <div class="experience-item"> <h5>Co-Founder, Nakhra Swag</h5> <p>I co-founded Nakhra Swag, a casual-wear brand for men and women, where I learned new skills and navigated various challenges. At Nakhra Swag, customer satisfaction is our primary focus, and we aim to connect with our audience to understand and fulfill their needs. Our brand reflects the fashion sensibilities of today's youth, offering a unique product line that aligns with the latest trends at unbeatable prices. Looking ahead, we plan to expand by developing in-house products and delivering them directly to our valued customers.</p> </div>
+                <h4>Education</h4> <div class="education-item"> <p><strong>The Bhawanipur Education Society College | Kolkata, West Bengal</strong><br> Commerce - BCom in Accounting and Business/Management | Expected 08/2027<br> <em>Currently completing courses in Bcom Honours.</em></p> </div> <div class="education-item"> <p><strong>Vidyanjali International School | Kolkata, West Bengal</strong><br> Business/Commerce | Completed 08/2024</p> </div>
+                <h4>Awards & Volunteering</h4> <p>Student Volunteer for school's annual sports event. Earned the "Best Extempore Speaker" award twice.</p>
+                <h4>Languages</h4> <p>English, Hindi, Bengali</p>
+            </div>
+        </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+        <div class="window" id="skills-window" data-title="Skills" data-icon-svg='<svg class="window-icon" viewBox="0 0 16 16"><path d="M2 2.5C2 2.22386 2.22386 2 2.5 2H6L7.5 4H13.5C13.7761 4 14 4.22386 14 4.5V12.5C14 12.7761 13.7761 13 13.5 13H2.5C2.22386 13 2 12.7761 2 12.5V2.5Z" fill="#FFDA78" stroke="#EAA220" stroke-width="1"/></svg>'>
+            <div class="window-header">
+                <span class="window-title">Skills</span>
+                <div class="window-buttons">
+                    <button class="minimize" title="Minimize"><svg viewBox="0 0 10 10"><path d="M0 4H10V6H0V4Z"/></svg></button>
+                    <button class="maximize" title="Maximize"><svg viewBox="0 0 10 10"><rect x="0" y="0" width="10" height="10" stroke-width="2" fill="none"/></svg></button>
+                    <button class="close" title="Close"><svg viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke-width="2.5" stroke-linecap="round"/></svg></button>
+                </div>
+            </div>
+            <div class="window-content">
+                <h4>Technical Skills</h4> <ul> <li>HTML, Cascading Style Sheets (CSS), JavaScript (AJAX, JSON)</li> <li>WordPress, WooCommerce</li> <li>Flutter (for UI/UX Design & App Development)</li> <li>Progressive Web Apps (PWA)</li> <li>Amazon Web Services (AWS)</li> <li>Android Development (Conceptual)</li> <li>Figma (Software)</li> <li>Adobe Photoshop, Canva</li> </ul>
+                <h4>Business & Other Skills</h4> <ul> <li>Business Strategy</li> <li>Entrepreneurship, Start-up Leadership</li> <li>Analytical Skills</li> <li>Relationship Building</li> <li>Social Media Management</li> <li>IT Acumen</li> </ul>
+                <h4>Certificates</h4> <ul> <li>AWS Educate Introduction to Generative AI</li> <li>AWS Educate Getting Started with Compute</li> </ul>
+            </div>
+        </div>
 
-          <ol class="timeline-list">
+        <div class="window" id="projects-window" data-title="Projects" data-icon-svg='<svg class="window-icon" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M8 1C8.72222 3.66667 9 6.33333 9 8C9 9.66667 8.72222 12.3333 8 15M8 1C7.27778 3.66667 7 6.33333 7 8C7 9.66667 7.27778 12.3333 8 15M1 8H15M3 4C4.61111 6 5.8 8 6.2 8M13 4C11.3889 6 10.2 8 9.8 8M3 12C4.61111 10 5.8 8 6.2 8M13 12C11.3889 10 10.2 8 9.8 8" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>'>
+            <div class="window-header">
+                <span class="window-title">Projects</span>
+                <div class="window-buttons">
+                    <button class="minimize" title="Minimize"><svg viewBox="0 0 10 10"><path d="M0 4H10V6H0V4Z"/></svg></button>
+                    <button class="maximize" title="Maximize"><svg viewBox="0 0 10 10"><rect x="0" y="0" width="10" height="10" stroke-width="2" fill="none"/></svg></button>
+                    <button class="close" title="Close"><svg viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke-width="2.5" stroke-linecap="round"/></svg></button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="project-item"><h4>Nakhra Swag E-Commerce Platform (WooCommerce)</h4><p>Built a modern, responsive fashion e-commerce website for Nakhra Swag. Integrated seamless cart, custom product filtering, and real-time inventory syncing, significantly enhancing mobile shopping UX. Planned website development, converting mockups into usable web presence with HTML, JavaScript, AJAX, and JSON coding. Redesigned the website to create a more visually appealing, user-friendly experience.</p></div>
+                <div class="project-item"><h4>Nakhra Swag Flutter App (UI/UX + WordPress Integration)</h4><p>Designed the complete UI/UX for the Nakhra Swag mobile app using Flutter. Integrated the frontend with the existing WooCommerce WordPress backend, enabling dynamic product loading, category filtering, and responsive interaction across platforms.</p></div>
+                <div class="project-item"><h4>Ezee2Host Corporate Website (WordPress)</h4><p>Developed a modern corporate website for Ezee2Host IT Solutions using WordPress. Focused on clean design, fast performance, and clear service offerings with lead capture forms and mobile responsiveness. Provided front-end development support, creating visually appealing designs that aligned with brand standards. Developed custom web applications, resulting in tailored solutions for client needs. Discussed site and app requirements with clients to produce actionable development plans on time and within budget.</p></div>
+            </div>
+        </div>
 
-            <li class="timeline-item">
+        <div class="window" id="contact-window" data-title="Contact Me" data-icon-svg='<svg class="window-icon" viewBox="0 0 16 16"><rect x="1.5" y="3.5" width="13" height="9" rx="1" fill="#D4E6FC" stroke="currentColor" stroke-width="1"/><path d="M2 4L8 9L14 4" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>'>
+            <div class="window-header">
+                <span class="window-title">Contact Me</span>
+                <div class="window-buttons">
+                    <button class="minimize" title="Minimize"><svg viewBox="0 0 10 10"><path d="M0 4H10V6H0V4Z"/></svg></button>
+                    <button class="maximize" title="Maximize"><svg viewBox="0 0 10 10"><rect x="0" y="0" width="10" height="10" stroke-width="2" fill="none"/></svg></button>
+                    <button class="close" title="Close"><svg viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke-width="2.5" stroke-linecap="round"/></svg></button>
+                </div>
+            </div>
+            <div class="window-content">
+                <h3>Get in Touch</h3> <div class="contact-info"> <p><strong>Email:</strong> <a href="mailto:naman.m08@gmail.com">naman.m08@gmail.com</a></p> <p><strong>Phone:</strong> <a href="tel:9875479088">9875479088</a></p> <p><strong>LinkedIn:</strong> <a href="http://linkedin.com/in/namanxmehrotra" target="_blank">linkedin.com/in/namanxmehrotra</a></p> <p><strong>Portfolio:</strong> <a href="http://namanxmehrotra.netlify.app" target="_blank">namanxmehrotra.netlify.app</a></p> <p><strong>Location:</strong> Kolkata, India</p> </div> <hr style="border: 0; border-top: 1px dotted #B0B0B0; margin: 10px 0;"> <p>Feel free to reach out. I'm open to discussing new projects, creative ideas, or opportunities.</p>
+            </div>
+        </div>
 
-              <h4 class="h4 timeline-item-title">Nakhra Swag (Co Founder and CMO)</h4>
-
-              <span>January 2023 — Present</span>
-
-              <p class="timeline-text">
-                Nakhra Swag is a casual-wear brand for Men and Women. Our customers and their satisfaction are our main focus and we believe in connecting with them to meet their requirements and what they want. 
-                We mirror the fashion sense of today’s youth and intend to sell a unique product line that conforms to the latest trend standards at unbeatable prices. 
-                Looking ahead, Nakhra Swag plans to expand by creating products in-house and selling them directly to our valued customers.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Ezee2Host (Internship & Web Developer)</h4>
-
-              <span>January 2021 — Present</span>
-
-              <p class="timeline-text">
-                Ezee2Host is a leading social media company and digital marketing agency in Kolkata, India. 
-                We are an end-to-end IT Solution Partner with UI/UX Design, Creative Agency in India providing services to leading international and domestic brands. 
-                At Ezee2Host, we are a digital marketing company that believes in breakthrough campaigns and full customer delight.
-              </p>
-
-            </li>
-
-            <a href="https://drive.google.com/file/d/1LSlMh2WUftNBil7jT_P3JsnQBMY_aCle/view?usp=sharing" class="custom-button" target="_blank" rel="noopener noreferrer">
-              <button class="custom-btn" type="submit">
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Download Resume</span>
-              </button>
-            </a>
-
-          </ol>
-
-        </section>
+        <div class="window" id="control-panel-window" data-title="Control Panel" data-icon-svg='<svg class="window-icon" viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" rx="1" fill="#C0C0C0" stroke="currentColor" stroke-width="1"/><path d="M5 6H11M5 8H11M5 10H11" stroke="currentColor" stroke-width="1" stroke-linecap="round"/><circle cx="7" cy="6" r=".7" fill="#0078D7"/><circle cx="9" cy="8" r=".7" fill="#0078D7"/><circle cx="7" cy="10" r=".7" fill="#0078D7"/></svg>' style="width:450px; height:300px;">
+            <div class="window-header">
+                <span class="window-title">Control Panel</span>
+                <div class="window-buttons">
+                    <button class="minimize" title="Minimize"><svg viewBox="0 0 10 10"><path d="M0 4H10V6H0V4Z"/></svg></button>
+                    <button class="maximize" title="Maximize"><svg viewBox="0 0 10 10"><rect x="0" y="0" width="10" height="10" stroke-width="2" fill="none"/></svg></button>
+                    <button class="close" title="Close"><svg viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke-width="2.5" stroke-linecap="round"/></svg></button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="control-panel-applet" id="cp-display-properties">
+                    <div class="icon-image-wrapper"><svg viewBox="0 0 32 32"><rect x="4" y="6" width="24" height="16" rx="1" fill="#0078D7" stroke="#0058CC" stroke-width="1.5"/><path d="M10 26H22" stroke="#000" stroke-width="2" stroke-linecap="round"/></svg></div>
+                    <span>Display Properties</span>
+                </div>
+                <div class="control-panel-applet" id="cp-system-info">
+                    <div class="icon-image-wrapper"><svg viewBox="0 0 32 32"><rect x="6" y="4" width="20" height="24" rx="1" fill="#4CAF50" stroke="#388E3C" stroke-width="1.5"/><circle cx="16" cy="10" r="3" fill="white"/><path d="M12 18H20M12 22H20" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+                    <span>System Information</span>
+                </div>
+                <div class="control-panel-applet" id="cp-add-remove">
+                     <div class="icon-image-wrapper"><svg viewBox="0 0 32 32"><rect x="5" y="8" width="22" height="18" rx="1" fill="#FF9800" stroke="#F57C00" stroke-width="1.5"/><rect x="9" y="12" width="6" height="6" fill="white"/><rect x="17" y="12" width="6" height="6" fill="white"/><path d="M12 5L14 8H18L20 5" stroke="#F57C00" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div>
+                    <span>Add/Remove Programs</span>
+                </div>
+                 <div class="control-panel-applet" id="cp-mouse-settings">
+                    <div class="icon-image-wrapper"><svg viewBox="0 0 32 32"><path d="M16 4C12.2222 4 8 9.33333 8 15V21C8 24.3137 10.6863 27 14 27H18C21.3137 27 24 24.3137 24 21V15C24 9.33333 19.7778 4 16 4Z" fill="#9C27B0" stroke="#7B1FA2" stroke-width="1.5"/><path d="M16 4V10" stroke="#7B1FA2" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+                    <span>Mouse Settings</span>
+                </div>
+            </div>
+        </div>
         
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">ReactJS</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="55">55%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">MySQL</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-            <div class="title-wrapper">
-              <h5 class="h5">MongoDB</h5>
-              <data value="70">70%</data>
+        <div class="window" id="display-properties-dialog" data-title="Display Properties" data-icon-svg='<svg class="window-icon" viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="8" rx="0.5" fill="#0078D7" stroke="currentColor" stroke-width="1"/><path d="M5 13H11" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>' style="width:350px; height:250px; z-index: 50;">
+            <div class="window-header">
+                <span class="window-title">Display Properties</span>
+                <div class="window-buttons">
+                    <button class="close" title="Close"><svg viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke-width="2.5" stroke-linecap="round"/></svg></button>
+                </div>
             </div>
-
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style="width: 70%;"></div>
+            <div class="window-content mock-dialog">
+                <h4>Appearance</h4>
+                <label for="wallpaper-select">Wallpaper:</label>
+                <select id="wallpaper-select">
+                    <option value="bliss">Bliss (Default)</option>
+                    <option value="blue">Windows Blue</option>
+                    <option value="green">Windows Green</option>
+                    <option value="gray">Classic Gray</option>
+                    <option value="none">None (Black)</option>
+                </select>
+                <div class="dialog-buttons">
+                    <button class="dialog-ok">OK</button>
+                    <button class="dialog-cancel">Cancel</button>
+                </div>
             </div>
-
-          </li>
-
-            
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">NodeJS</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">VS Code</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Figma</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">GitHub</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-            
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Powerpoint</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-            
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Canva</h5>
-                <data value="80">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Audacity</h5>
-                <data value="85">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-            
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Portfolio</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Portfolio</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://ezee2host.com">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.png" alt="ezee2host" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Ezee2Host - IT Solution</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://nakhraswag.com">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.jpg" alt="nakhra swag" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Nakhra Swag - Ecommerce Website</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://deepjyotigroup.com/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.png" alt="deep jyoti group" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Deep Jyoti Group</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://play.google.com/store/apps/details?id=com.anujenterprise.nakhraswag">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.jpg" alt="nakhra swag app" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Nakhra Swag (Android App)</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://play.google.com/store/apps/details?id=com.ezee2host.technologies">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="ezee2host app" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Ezee2Host (Android App)</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="portfolio">
-              <a href="https://namanxmehrotra.netlify.app/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="portfolio" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Personal Portfolio</h3>
-
-                <p class="project-category">Portfolio</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-      <!--
-        - #Quotes
-      -->
-
-      <article class="quotes" data-page="quotes">
-
-        <header>
-          <h2 class="h2 article-title">Quotes</h2>
-        </header>
-
-        <section class="quotes-posts">
-
-          <ul class="quotes-posts-list">
-
-            <li class="quotes-post-item">
-              <a href="./assets/images/quote1.png">
-
-                <figure class="quotes-banner-box">
-                  <img src="./assets/images/quote1.png" alt="Quote 1" loading="lazy">
-                </figure>
-
-                <div class="quotes-content">
-
-                  <div class="quotes-meta">
-                    <p class="quotes-category">Life</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">August 08, 2024</time>
-                  </div>
-
-                  <h3 class="h3 quotes-item-title">Quote 1</h3>
-
-                  <p class="quotes-text">
-                    Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.
-                  </p>
-
+        </div>
+
+         <div class="window" id="system-info-dialog" data-title="System Information" data-icon-svg='<svg class="window-icon" viewBox="0 0 16 16"><rect x="3" y="2" width="10" height="12" rx="0.5" fill="#4CAF50" stroke="currentColor" stroke-width="1"/><circle cx="8" cy="5" r="1.5" fill="white"/><path d="M6 9H10M6 11H10" stroke="white" stroke-width="1" stroke-linecap="round"/></svg>' style="width:400px; height:300px; z-index: 50;">
+            <div class="window-header">
+                <span class="window-title">System Information</span>
+                <div class="window-buttons">
+                     <button class="close" title="Close"><svg viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke-width="2.5" stroke-linecap="round"/></svg></button>
                 </div>
-
-              </a>
-            </li>
-
-            <li class="quotes-post-item">
-              <a href="./assets/images/quote2.png">
-
-                <figure class="quotes-banner-box">
-                  <img src="./assets/images/quote2.png" alt="Quote 2" loading="lazy">
-                </figure>
-
-                <div class="quotes-content">
-
-                  <div class="quotes-meta">
-                    <p class="quotes-category">Education</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">August 10, 2024</time>
-                  </div>
-
-                  <h3 class="h3 quotes-item-title">Quote 2</h3>
-
-                  <p class="quotes-text">
-                    Education is the most powerful weapon which you can use to change the world.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="quotes-post-item">
-              <a href="./assets/images/quote3.png">
-
-                <figure class="quotes-banner-box">
-                  <img src="./assets/images/quote3.png" alt="Quote 3" loading="lazy">
-                </figure>
-
-                <div class="quotes-content">
-
-                  <div class="quotes-meta">
-                    <p class="quotes-category">Inspirational</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">August 15, 2024</time>
-                  </div>
-
-                  <h3 class="h3 quotes-item-title">Quote 3</h3>
-
-                  <p class="quotes-text">
-                    If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="quotes-post-item">
-              <a href="./assets/images/quote4.png">
-
-                <figure class="quotes-banner-box">
-                  <img src="./assets/images/quote4.png" alt="Quote 4" loading="lazy">
-                </figure>
-
-                <div class="quotes-content">
-
-                  <div class="quotes-meta">
-                    <p class="quotes-category">Friendship</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">August 22, 2024</time>
-                  </div>
-
-                  <h3 class="h3 quotes-item-title">Quote 4</h3>
-
-                  <p class="quotes-text">
-                    Lots of people want to ride with you in the limo, but what you want is someone who will take the bus with you when the limo breaks down
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-      
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.21689694983!2d88.26495057337593!3d22.535564936984567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1724681482090!5m2!1sen!2sin"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-      
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-      
-          <form id="contact-form" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <button id="submit-button" class="form-btn" type="submit">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      </article>
-      
-      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-      <script>
-        (function(){
-          emailjs.init("gXY9h-aQwn54hZbX1"); // Replace with your EmailJS public key
-        })();
-      
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-          event.preventDefault();
-          document.getElementById("submit-button").disabled = true;
-      
-          emailjs.sendForm("service_bcx0bwb", "template_md2mqeq", this)
-            .then(function() {
-              alert("Message sent successfully!");
-              document.getElementById("contact-form").reset();
-              document.getElementById("submit-button").disabled = false;
-            }, function(error) {
-              alert("Failed to send message. Please try again.");
-              document.getElementById("submit-button").disabled = false;
-            });
-        });
-      </script>
-      
+            <div class="window-content mock-dialog">
+                <h4>System:</h4> <p>OS Name: Windows XP Portfolio Edition</p> <p>Version: 2025 (Build N.M.)</p> <p>User: Naman Mehrotra</p>
+                <h4>Hardware (Mock):</h4> <p>Processor: Retro Emulated Dual Core</p> <p>Memory (RAM): 512 MB (Virtual)</p> <p>Display Adapter: Portfolio GFX Pro</p>
+                 <div class="dialog-buttons"> <button class="dialog-ok">OK</button> </div>
+            </div>
+        </div>
+
+    </div> 
+    <div id="taskbar">
+        <button id="start-button">
+            <svg class="start-logo-svg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="#F32B2C" d="M0 0H9V9H0z"/><path fill="#80C342" d="M10 0H19V9H10z"/><path fill="#04A4F6" d="M0 10H9V19H0z"/><path fill="#FFBA04" d="M10 10H19V19H10z"/></svg>
+            Start
+        </button>
+        <div id="taskbar-icons"></div>
+        <div id="clock">12:00 AM</div>
     </div>
 
-  </main>
+    <div id="start-menu">
+        <div class="start-menu-header">
+            <div class="icon-image-wrapper"> <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="#555"/></svg> </div>
+            <span>Naman Mehrotra</span>
+        </div>
+        <div class="start-menu-columns">
+            <div class="start-menu-left-column">
+                <div class="start-menu-item" data-window-id="projects-window">
+                    <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" stroke="#1E90FF" stroke-width="1.5" fill="none"/><path d="M10 2C10.7222 4.66667 11 7.33333 11 9C11 10.6667 10.7222 13.3333 10 16M10 2C9.27778 4.66667 9 7.33333 9 9C9 10.6667 9.27778 13.3333 10 16M2 9H18M4 5C5.61111 7 6.8 9 7.2 9M16 5C14.3889 7 13.2 9 12.8 9M4 13C5.61111 11 6.8 9 7.2 9M16 13C14.3889 11 13.2 9 12.8 9" stroke="#1E90FF" stroke-width="1" stroke-linecap="round"/></svg>
+                    <span><strong>My Projects</strong></span>
+                </div>
+                <div class="start-menu-item" data-window-id="skills-window">
+                    <svg viewBox="0 0 20 20"><path d="M3 3.5C3 3.22386 3.22386 3 3.5 3H7L8.5 5H16.5C16.7761 5 17 5.22386 17 5.5V15.5C17 15.7761 16.7761 16 16.5 16H3.5C3.22386 16 3 15.7761 3 15.5V3.5Z" fill="#FFDA78" stroke="#EAA220" stroke-width="1"/></svg>
+                    <span><strong>My Skills</strong></span>
+                </div>
+                <div class="start-menu-separator"></div>
+                <div class="start-menu-item" data-window-id="about-window">
+                     <svg viewBox="0 0 20 20"><path d="M3 4C3 3.44772 3.44772 3 4 3H16C16.5523 3 17 3.44772 17 4V12H3V4Z" fill="#B0B0B0" stroke="#000" stroke-width="1"/><path d="M3 12V13.5C3 14.0523 3.44772 14.5 4 14.5H16C16.5523 14.5 17 14.0523 17 13.5V12" stroke="#000" stroke-width="1"/><rect x="5" y="5" width="10" height="6" fill="#0058CC"/><path d="M7.5 16H12.5" stroke="#000" stroke-width="1" stroke-linecap="round"/></svg>
+                    <span>About Me</span>
+                </div>
+                <div class="start-menu-item" data-window-id="contact-window">
+                    <svg viewBox="0 0 20 20"><rect x="2.5" y="4.5" width="15" height="10" rx="1" fill="#D4E6FC" stroke="#0058CC" stroke-width="1"/><path d="M3 5L10 10L17 5" stroke="#0058CC" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Contact Me</span>
+                </div>
+                 <div class="start-menu-separator"></div>
+                <div class="start-menu-item" data-link="http://namanxmehrotra.netlify.app">
+                    <svg viewBox="0 0 20 20"><path d="M10 2.5L12.5 7.5L18 7.5L13.75 11.25L15 16.5L10 13.125L5 16.5L6.25 11.25L2 7.5L7.5 7.5L10 2.5Z" fill="#FFA500" stroke="#E69500" stroke-width="1" stroke-linejoin="round"/></svg>
+                    <span>My Netlify Portfolio</span>
+                </div>
+                <div class="start-menu-item" data-link="http://linkedin.com/in/namanxmehrotra">
+                    <svg viewBox="0 0 20 20"><rect x="3" y="3" width="14" height="14" rx="1" fill="#0077B5"/><path d="M6.5 8.5V14M6.5 6.5C6.5 7.05228 6.05228 7.5 5.5 7.5C4.94772 7.5 4.5 7.05228 4.5 6.5C4.5 5.94772 4.94772 5.5 5.5 5.5C6.05228 5.5 6.5 5.94772 6.5 6.5ZM9.5 14V10.75C9.5 9.925 9.5 8.75 11.25 8.75C13 8.75 13 9.75 13 10.75V14M14.5 8.5H13V8.5" stroke="white" stroke-width="1" stroke-linecap="round"/></svg>
+                    <span>LinkedIn</span>
+                </div>
+            </div>
+            <div class="start-menu-right-column">
+                 <div class="start-menu-item" data-window-id="control-panel-window">
+                    <svg viewBox="0 0 20 20"><rect x="3" y="3" width="14" height="14" rx="1" fill="#C0C0C0" stroke="#505050" stroke-width="1"/><path d="M6 7H14M6 10H14M6 13H14" stroke="#505050" stroke-width="1" stroke-linecap="round"/><circle cx="8" cy="7" r="0.8" fill="#0078D7"/><circle cx="10.5" cy="10" r="0.8" fill="#0078D7"/><circle cx="8" cy="13" r="0.8" fill="#0078D7"/></svg>
+                    <span>Control Panel</span>
+                </div>
+            </div>
+        </div>
+        <div class="start-menu-footer">
+            <button id="turnoff-button" title="Turn Off Computer">
+                <svg viewBox="0 0 16 16"><path d="M8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1ZM8 13C5.23858 13 3 10.7614 3 8C3 5.23858 5.23858 3 8 3C10.7614 3 13 5.23858 13 8C13 10.7614 10.7614 13 8 13ZM8.5 4H7.5V8.5L8.5 8.5V4Z" fill="currentColor"/></svg>Turn Off</button>
+        </div>
+    </div>
 
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <div class="custom-modal-overlay" id="confirmation-modal">
+        <div class="custom-modal">
+            <p id="confirmation-message">Are you sure?</p>
+            <div class="custom-modal-buttons">
+                <button id="confirm-yes">Yes</button>
+                <button id="confirm-no">No</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script> 
 </body>
-
 </html>

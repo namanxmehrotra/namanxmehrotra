@@ -38,8 +38,8 @@
         }
 
         .desktop-icon {
-            width: 90px; /* Increased size */
-            padding: 5px 0; /* Adjusted padding */
+            width: 90px; 
+            padding: 5px 0; 
             text-align: center;
             color: white;
             cursor: pointer;
@@ -56,9 +56,9 @@
         }
 
         .desktop-icon .icon-image-wrapper { 
-            width: 48px; /* Increased size */
-            height: 48px; /* Increased size */
-            margin-bottom: 3px; /* Adjusted margin */
+            width: 48px; 
+            height: 48px; 
+            margin-bottom: 3px; 
             display: flex;
             align-items: center;
             justify-content: center;
@@ -71,12 +71,12 @@
 
 
         .desktop-icon span {
-            font-size: 11px; /* Increased size */
+            font-size: 11px; 
             background-color: transparent; 
             padding: 1px 2px;
             word-wrap: break-word; 
             overflow-wrap: break-word; 
-            max-width: 85px; /* Increased width */
+            max-width: 85px; 
             line-height: 1.2;
         }
 
@@ -583,6 +583,22 @@
         }
         .custom-modal-buttons button:hover { background-color: #C0C0C0; }
 
+        #turn-on-button {
+            display:none; 
+            position:fixed; 
+            top:50%; 
+            left:50%; 
+            transform:translate(-50%, -50%); 
+            padding:20px 40px; 
+            font-size:24px; 
+            background-color: #37A837; 
+            color:white; 
+            border:2px solid white; 
+            border-radius:5px; 
+            cursor:pointer;
+            z-index: 3000; /* Above the turned-off screen overlay */
+        }
+
 
         /* Responsive adjustments */
         /* Tablet Portrait / Small Desktop */
@@ -597,16 +613,16 @@
                 justify-content: flex-start; 
             }
             .desktop-icon {
-                width: 80px; /* Increased for tablet */
+                width: 85px; /* Slightly larger for tablet */
                 margin: 5px;
             }
             .desktop-icon .icon-image-wrapper {
-                width: 40px; /* Increased for tablet */
-                height: 40px; /* Increased for tablet */
+                width: 42px; /* Slightly larger for tablet */
+                height: 42px; 
             }
             .desktop-icon span {
-                font-size: 10px; /* Adjusted for tablet */
-                max-width: 75px; /* Adjusted for tablet */
+                font-size: 10px; 
+                max-width: 80px; 
             }
 
             #date-time-widget { font-size: 11px; padding: 6px; top:5px; right:5px;}
@@ -658,19 +674,19 @@
                 padding: 3px;
             }
             .desktop-icon-container {
-                gap: 1px; 
+                gap: 2px; /* Slightly more gap for bigger icons */
             }
             .desktop-icon {
-                width: 70px; /* Increased for mobile */
-                margin: 3px; 
+                width: 80px; /* Bigger icons on mobile */
+                margin: 4px; 
             }
              .desktop-icon .icon-image-wrapper {
-                width: 36px; /* Increased for mobile */
-                height: 36px; /* Increased for mobile */
+                width: 42px; /* Bigger icon images on mobile */
+                height: 42px; 
             }
             .desktop-icon span {
-                font-size: 9px; 
-                max-width: 65px; /* Adjusted for mobile */
+                font-size: 10px; /* Slightly larger text */
+                max-width: 75px; 
             }
 
              #date-time-widget, #weather-widget {
@@ -693,11 +709,25 @@
                 border-radius: 0;
                 border:none;
             }
-            .window-header { height: 20px; padding: 2px 4px; font-size: 11px;}
-            .window-header img.window-icon, .window-header svg.window-icon { width: 14px; height: 14px; margin-right: 3px;}
-            .window-buttons button { width: 16px; height: 16px; }
-            .window-buttons button svg { width: 8px; height: 8px;}
-            .window-content { padding: 8px; font-size: 10px; height: calc(100% - 20px - 16px); }
+            .window-header { height: 24px; padding: 2px 5px; font-size: 12px;} /* Slightly taller header */
+            .window-header img.window-icon, .window-header svg.window-icon { width: 16px; height: 16px; margin-right: 4px;}
+            .window-buttons button { 
+                width: 22px; /* Bigger buttons */
+                height: 22px; 
+                margin-left: 3px;
+            }
+            .window-buttons button svg { 
+                width: 12px; /* Bigger SVG symbols */
+                height: 12px;
+            }
+            /* Colorful window buttons on mobile */
+            .window-buttons button.btn-minimize { background-color: #FFC700; border-color: #FFFFFF #E6A200 #E6A200 #FFFFFF; } /* Yellow */
+            .window-buttons button.btn-maximize { background-color: #50E878; border-color: #FFFFFF #3CB05C #3CB05C #FFFFFF; } /* Green */
+            .window-buttons button.btn-close { background-color: #FF5146; border-color: #FFFFFF #E63B2F #E63B2F #FFFFFF; }    /* Red */
+            .window-buttons button.btn-close svg { fill: white; } /* White X on red button */
+
+
+            .window-content { padding: 8px; font-size: 11px; height: calc(100% - 24px - 16px); } /* Adjusted for taller header */
 
 
             #start-menu {

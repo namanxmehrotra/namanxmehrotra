@@ -12,6 +12,7 @@
         const weatherWidgetDesc = document.querySelector('#weather-widget .description');
         const weatherWidgetLoading = document.querySelector('#weather-widget .loading');
         const weatherWidgetError = document.querySelector('#weather-widget .error');
+        const turnOnButton = document.getElementById('turn-on-button');
 
         const windows = document.querySelectorAll('.window'); 
         let desktopIcons = document.querySelectorAll('.desktop-icon-container .desktop-icon'); 
@@ -74,7 +75,7 @@
             weatherWidgetTemp.textContent = '--°C';
             weatherWidgetDesc.textContent = 'Loading...';
 
-            const apiKey = ""; 
+            const apiKey = "AIzaSyCAYjNggYp1ulTMwRuvDR1oojELtCl79gM"; 
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
             const promptText = "What is the current weather in Kolkata, India? Provide temperature in Celsius and a brief description (e.g., Sunny, Cloudy, Light Rain). Format as JSON like: {\"location\": \"Kolkata, India\", \"temperatureC\": 32, \"description\": \"Sunny\", \"iconCode\": \"01d\" } where iconCode is an OpenWeatherMap icon code (e.g., 01d for clear sky day, 01n for clear sky night, 02d for few clouds day etc.).";
 
@@ -360,19 +361,27 @@
             desktopIcons.forEach(icon => {
                 const windowId = icon.getAttribute('data-window-id');
                 const linkUrl = icon.getAttribute('data-link');
+                const action = windowId ? 'window' : (linkUrl ? 'link' : null);
 
-                if (windowId) {
-                    icon.addEventListener('dblclick', () => {
+                const openHandler = () => {
+                    if (action === 'window') {
                         const windowElement = document.getElementById(windowId);
                         if (windowElement) {
                             openWindow(windowElement, true);
                         }
-                    });
-                } else if (linkUrl) {
-                    icon.addEventListener('dblclick', () => {
+                    } else if (action === 'link') {
                         window.open(linkUrl, '_blank');
-                    });
+                    }
+                };
+
+                // Use click for touch/small screens, dblclick for larger screens
+                if (window.matchMedia("(max-width: 768px)").matches) {
+                    icon.addEventListener('click', openHandler);
+                } else {
+                    icon.addEventListener('dblclick', openHandler);
                 }
+                
+                // Single click for selection still applies to all
                 icon.addEventListener('click', (e) => {
                     e.stopPropagation(); 
                     desktopIcons.forEach(i => i.classList.remove('selected'));
@@ -573,13 +582,23 @@
         });
 
 
-        // Turn Off Button (Log Off button is removed)
+        // Turn Off Button
         document.getElementById('turnoff-button')?.addEventListener('click', () => {
             showConfirmationModal("Are you sure you want to Turn Off Computer?", () => {
                 console.log("User chose to turn off.");
-                document.body.innerHTML = '<div style="background-color:black; color:white; height:100vh; display:flex; justify-content:center; align-items:center; font-size:20px; font-family:Tahoma;">It is now safe to turn off your computer.</div>';
+                document.body.innerHTML = '<div style="background-color:black; color:white; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; font-size:20px; font-family:Tahoma;"><div>It is now safe to turn off your computer.</div></div>';
+                const turnOnBtn = document.getElementById('turn-on-button'); // Get the button from the original DOM
+                if(turnOnBtn) { // Check if it exists
+                    document.body.appendChild(turnOnBtn); // Append it to the new body
+                    turnOnBtn.style.display = 'block'; // Make it visible
+                }
             });
         });
+        
+        // Turn On Button
+        turnOnButton?.addEventListener('click', () => {
+            window.location.reload();
+        });
+
 
     });
-    // End of simulated script.js

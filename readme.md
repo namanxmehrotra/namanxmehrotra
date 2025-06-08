@@ -3,7 +3,7 @@ The way businesses approach web development is outdated it's no longer just abou
 
 
 ## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/namanxmehrotra) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/namanxmehrotra) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/namanxmehrotra) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@namanxmehrotra) [![My Website](https://img.shields.io/badge/My-Portfolio_Website-blue)](https://namanmehrotra.netlify.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/namanxmehrotra) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/namanxmehrotra) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@namanxmehrotra) [![My Website](https://img.shields.io/badge/My-Portfolio_Website-blue)](https://namanmehrotra.netlify.app)
 
 
 # 💻 Tech Stack:
